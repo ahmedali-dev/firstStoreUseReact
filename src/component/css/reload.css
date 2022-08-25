@@ -1,0 +1,33 @@
+ .reload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 0.3s linear 0s infinite reload;
+  }
+  
+  .reload.samole {
+    /* background: blue; */
+    width: 30px;
+    height: 30px;
+  }
+  
+  .reload.samole div {
+    width: 25px;
+    height: 25px;
+    border: 3px solid transparent;
+    border-left-color: #a4c3b2;
+    border-bottom-color: #a4c3b2;
+    border-right-color: #a4c3b2;
+    border-radius: 1rem;
+    transform-origin: center;
+  }
+  
+  @keyframes reload {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
